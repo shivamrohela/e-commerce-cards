@@ -132,8 +132,15 @@ margin: 0;
     margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .tab {
-    flex-direction: column;
-  }
+@media screen and (max-width: 425px) {
+    .tab button {
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 30px;
+        transition: 0.3s;
+        font-size: 17px;
+        border-radius: 5px;
+      }
 }
