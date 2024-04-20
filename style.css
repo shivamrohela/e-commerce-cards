@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.heading {
+  font-weight: 700;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 50px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.button-container {
+    background-color: #ddd;
+}
+
+.tab button:hover {
+  background-color: #8f8f8f;
+}
+
+.tab button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container {
+height: 280px;
+object-fit: fill;
+width: 250px;
+border-radius: 5px;
+}
+
+.product-card {
+  margin: 10px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 150px;
+    height:24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-price {
+    display: flex;
+
+}
+
+.vendor {
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.cart-button {
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 600;
+    color:#8F8F8F;
+margin: 0;
+}
+
+.effective-price {
+    font-size : 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.discount {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF3737;
+    margin: 0;
+}
+
+.card-container {
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tab {
+    flex-direction: column;
+  }
+}
