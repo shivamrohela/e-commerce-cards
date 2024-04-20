@@ -55,8 +55,8 @@ function displayProducts(category) {
               <p class="vendor"><span>&#8226;</span> ${product.vendor}</p>
               </div>
               <div class="card-price">
-                <p class="effective-price">Rs ${product.price}</p>
-                <p class="original-price">${product.compare_at_price}</p>
+                <p class="effective-price">Rs ${Number(product.price).toFixed(2)}</p>
+                <p class="original-price">${Number(product.compare_at_price).toFixed(2)}</p>
                 <p class="discount">${discount}% off</p>
                 </div>
                 <button class="cart-button">Add to Cart</button>
