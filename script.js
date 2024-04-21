@@ -47,6 +47,9 @@ function displayProducts(category) {
         productsContainer.innerHTML += `
             <div class="product-card">
             <div class="image-container">
+            ${product.badge_text ? `<div class="sale">
+            <p class="offer-text">${product.badge_text}</p>
+            </div>` : ``}
                 <img src="${product.image}" alt="${product.title}" class="image-container">
                 </div>
               <div>
