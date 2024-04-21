@@ -61,6 +61,24 @@ height: 280px;
 object-fit: fill;
 width: 250px;
 border-radius: 5px;
+position: relative;
+}
+
+.sale {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    top: 15px;
+    left:15px;
+    text-align: center;
+    z-index: 100;
+    border-radius: 2px;
+}
+
+.offer-text {
+ font-size: 10px;
+ font-weight: 600;
 }
 
 .product-card {
